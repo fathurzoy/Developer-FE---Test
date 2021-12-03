@@ -1,8 +1,6 @@
-import logo from "./logo.svg";
-import "./App.css";
-import { Card } from "antd";
-import { useEffect, useState } from "react";
 import axios from "axios";
+import { useEffect, useState } from "react";
+import "./App.css";
 import CardPost from "./components/CardPost";
 
 function App() {
@@ -15,7 +13,7 @@ function App() {
       );
 
       setDataPost(data);
-      console.log(data);
+      // console.log(data);
     } catch (error) {
       console.log(error);
     }

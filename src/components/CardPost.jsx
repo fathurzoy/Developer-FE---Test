@@ -5,12 +5,12 @@ import "./Cardpost.css";
 const CardPost = ({ title, body }) => {
   return (
     <Card
-      title={<h3>{title}</h3>}
+      title={<h3 className="titleCard">{title}</h3>}
       style={{ width: 400 }}
       hoverable
       className="cardPost"
     >
-      <p>{body} </p>
+      <p className="bodyCard">{body} </p>
     </Card>
   );
 };
